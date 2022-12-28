@@ -12,6 +12,18 @@ let errorLabel,
 	fieldClear,
 	removeErrorsMessages;
 
+class ListManage {
+	constructor(newElem) {
+		newElem.modalBtn
+		let div = document.createElement('div');
+		div.innerHTML = "<p>Новый элемент списка</p>";
+	}
+}
+
+// Создание нового элемента списка (вызов экз. класса)
+const createNewElem = new ListManage(modalBtn)
+
+
 function openCloseMobileMenu() {
 	function openMobileMenu() {
 		menuToggle.classList.toggle('active');
