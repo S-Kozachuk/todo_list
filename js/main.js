@@ -18,6 +18,7 @@ class ListManage {
 		let div = document.createElement('div');
 		div.innerHTML = '<p>Новый элемент списка</p>';
 	}
+	// При вызове экз. класса List manage в HTML должен создаваться новый блок
 }
 
 // Создание нового элемента списка (вызов экз. класса)
