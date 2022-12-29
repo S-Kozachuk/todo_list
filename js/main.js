@@ -8,22 +8,25 @@ const body = document.querySelector('body'),
 	formElem = document.querySelector('.form-window__elements'),
 	submitBtn = document.getElementById('btn-submit'),
 	timeout = 800;
+
 let errorLabel,
 	fieldClear,
 	removeErrorsMessages;
 
 class ListManage {
-	constructor(newElem) {
-		newElem.modalBtn
+	constructor() {
 		let div = document.createElement('div');
-		div.innerHTML = "<p>Новый элемент списка</p>";
+		div.innerHTML = '<p>Новый элемент списка</p>';
 	}
 }
 
 // Создание нового элемента списка (вызов экз. класса)
-const createNewElem = new ListManage(modalBtn)
+const createNewElem = new ListManage()
+console.log(createNewElem)
 
+modalBtn.addEventListener('click', createNewElem)
 
+/*
 function openCloseMobileMenu() {
 	function openMobileMenu() {
 		menuToggle.classList.toggle('active');
@@ -220,3 +223,4 @@ function ajaxFormSubmit() {
     // Block action if click to submit
     return false;
 }
+*/
