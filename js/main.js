@@ -32,7 +32,11 @@ console.log(createNewElem)
 const createnElement = new ListManage
 console.log(createnElement.newElem())
 
-// modalBtn.addEventListener('click', createNewElem)
+function openConsole() {
+	console.log('Test message')
+}
+
+modalBtn.addEventListener('click', openConsole());
 
 /*
 function openCloseMobileMenu() {
