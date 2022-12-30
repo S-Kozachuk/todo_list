@@ -14,9 +14,8 @@ let errorLabel,
 	removeErrorsMessages;
 
 class ListManage {
-	constructor() {
-		let div = document.createElement('div');
-		div.innerHTML = '<p>Новый элемент списка</p>';
+	constructor(name) {
+		this.text = name
 	}
 
 	newElem() {
@@ -27,8 +26,8 @@ class ListManage {
 }
 
 // Создание нового элемента списка (вызов экз. класса)
-const createNewElem = new ListManage()
-// console.log(createNewElem)
+const createNewElem = new ListManage('Test class')
+console.log(createNewElem)
 
 // modalBtn.addEventListener('click', createNewElem)
 
