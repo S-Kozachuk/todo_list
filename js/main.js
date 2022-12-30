@@ -20,7 +20,7 @@ class ListManage {
 
 	newElem() {
 		let div = document.createElement('div');
-		div.innerHTML = '<p>Новый элемент списка</p>';
+		return div.innerHTML = '<p>Новый элемент списка</p>';
 	}
 	// При вызове экз. класса List manage в HTML должен создаваться новый блок
 }
@@ -28,6 +28,9 @@ class ListManage {
 // Создание нового элемента списка (вызов экз. класса)
 const createNewElem = new ListManage('Test class')
 console.log(createNewElem)
+
+const createnElement = new ListManage
+console.log(createnElement.newElem())
 
 // modalBtn.addEventListener('click', createNewElem)
 
