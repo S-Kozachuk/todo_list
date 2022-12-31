@@ -17,26 +17,31 @@ class ListManage {
 	constructor(name) {
 		this.text = name
 	}
-
+	/*
 	newElem() {
 		let div = document.createElement('div');
 		return div.innerHTML = '<p>Новый элемент списка</p>';
 	}
+	*/
 	// При вызове экз. класса List manage в HTML должен создаваться новый блок
 }
 
 // Создание нового элемента списка (вызов экз. класса)
-const createNewElem = new ListManage('Test class')
-console.log(createNewElem)
+let createNewElem = new ListManage('Test class');
+// console.log(createNewElem)
 
-const createnElement = new ListManage
-console.log(createnElement.newElem())
-
-function openConsole() {
-	console.log('Test message')
+// let createElement = new ListManage
+// console.log(createnElement)
+createNewElem = {
+		newElem() {
+			let div = document.createElement('div');
+			return div.innerHTML = '<p>Новый элемент списка</p>';
+		}
 }
 
-modalBtn.addEventListener('click', openConsole());
+console.log(createNewElem.newElem())
+
+// modalBtn.addEventListener('click', createNewElem.newElem());
 
 /*
 function openCloseMobileMenu() {
