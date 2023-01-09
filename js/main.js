@@ -40,13 +40,9 @@ createNewElem = {
 	}
 }
 
-console.log(createNewElem.newElem())
+// console.log(createNewElem.newElem())
 
-let testFunction = (msg) => {
-	console.log(msg)
-}
-
-modalBtn.addEventListener('click', createNewElem.newElem());
+modalBtn.addEventListener('click', createNewElem.newElem);
 
 /*
 function openCloseMobileMenu() {
