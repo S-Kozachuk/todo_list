@@ -13,9 +13,10 @@ let errorLabel,
 	fieldClear,
 	removeErrorsMessages;
 
+// Класс, отвечающий за создание нового эл. списка
 class ListManage {
 	constructor(name) {
-		this.text = name
+		this.text = name;
 	}
 	/*
 	newElem() {
@@ -33,15 +34,19 @@ let createNewElem = new ListManage('Test class');
 // let createElement = new ListManage
 // console.log(createnElement)
 createNewElem = {
-		newElem() {
-			let div = document.createElement('div');
-			return div.innerHTML = '<p>Новый элемент списка</p>';
-		}
+	newElem() {
+		let div = document.createElement('div');
+		return div.innerHTML = '<p>Новый элемент списка</p>';
+	}
 }
 
 console.log(createNewElem.newElem())
 
-// modalBtn.addEventListener('click', createNewElem.newElem());
+let testFunction = (msg) => {
+	console.log(msg)
+}
+
+modalBtn.addEventListener('click', createNewElem.newElem());
 
 /*
 function openCloseMobileMenu() {
