@@ -16,6 +16,7 @@ class ListManage {
 	}
 }
 
+// Создание экземпляра createNewElem класса ListManage
 let createNewElem = new ListManage('Test class');
 // console.log(createNewElem)
 
