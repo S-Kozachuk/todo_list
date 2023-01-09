@@ -7,27 +7,15 @@ const body = document.querySelector('body'),
 	modalBtn = document.querySelectorAll('.modal__btn'),
 	formElem = document.querySelector('.form-window__elements'),
 	submitBtn = document.getElementById('btn-submit'),
-	timeout = 800;
-
-let errorLabel,
-	fieldClear,
-	removeErrorsMessages;
 
 // Класс, отвечающий за создание нового эл. списка
+// Прототип
 class ListManage {
 	constructor(name) {
 		this.text = name;
 	}
-	/*
-	newElem() {
-		let div = document.createElement('div');
-		return div.innerHTML = '<p>Новый элемент списка</p>';
-	}
-	*/
-	// При вызове экз. класса List manage в HTML должен создаваться новый блок
 }
 
-// Создание нового элемента списка (вызов экз. класса)
 let createNewElem = new ListManage('Test class');
 // console.log(createNewElem)
 
@@ -42,6 +30,7 @@ createNewElem = {
 
 // console.log(createNewElem.newElem())
 
+// Создание нового элемента списка (вызов экз. класса)
 modalBtn.addEventListener('click', createNewElem.newElem);
 
 /*
